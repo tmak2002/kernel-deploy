@@ -1,0 +1,5 @@
+post_pkg_postinstall() {
+    eselect kernel set linux-"${KV}"
+    CURRENT_KV=$(uname -r)
+    mv /usr/src/${CURRENT_KV}/.config /usr/src/linux/.config
+}
