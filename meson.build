@@ -1,7 +1,7 @@
-project('installkernel')
+project('kernel-deploy')
 
 install_data('installkernel',
-    install_dir: '/sbin'
+    install_dir: '/sbin',
     install_mode: 'rwxr-xr-x'
 )
 
